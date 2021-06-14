@@ -1,0 +1,8 @@
+{
+  "extends": "@wix/yoshi-flow-fullstack/tsconfig.flow.json",
+  "include": [
+    "__tests__",
+    "src",
+    "dev"
+  ]
+}

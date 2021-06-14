@@ -1,0 +1,62 @@
+{
+  "name": "@wix/wsr-tutorial",
+  "version": "1.0.0",
+  "license": "UNLICENSED",
+  "private": true,
+  "author": {
+    "name": "benblayer",
+    "email": "benbl@wix.com"
+  },
+  "scripts": {
+    "start": "yoshi-flow-fullstack start",
+    "build": "yoshi-flow-fullstack build",
+    "test": "yoshi-flow-fullstack test && npx sled-test-runner remote",
+    "lint": "yoshi-flow-fullstack lint",
+    "posttest": "npm run lint"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,ts,tsx}": "yoshi-flow-fullstack lint"
+  },
+  "dependencies": {
+    "i18next": "^19.1.0",
+    "react": "16.12.0",
+    "react-dom": "16.12.0",
+    "react-i18next": "^11.3.2"
+  },
+  "devDependencies": {
+    "@testing-library/react": "^11.2.5",
+    "@types/node": "^14.0.0",
+    "@types/react": "^16.7.20",
+    "@types/react-dom": "^16.0.11",
+    "@wix/fedops-logger": "^5.0.0",
+    "@wix/sled-test-runner": "^1.0.944",
+    "@wix/yoshi-flow-fullstack": "^5.0.0",
+    "husky": "~4.2.1",
+    "lint-staged": "^10.0.7",
+    "puppeteer": "^5.5.0",
+    "typescript": "~4.1.2"
+  },
+  "jest": {
+    "preset": "@wix/yoshi-flow-fullstack"
+  },
+  "eslintConfig": {
+    "extends": "@wix/eslint-config-yoshi"
+  },
+  "wix": {
+    "artifact": {
+      "groupId": "com.wixpress",
+      "artifactId": "wsr-tutorial",
+      "targets": {
+        "static": true
+      }
+    }
+  },
+  "wallaby": {
+    "autoDetect": true
+  }
+}
