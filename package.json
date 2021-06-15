@@ -26,7 +26,8 @@
     "i18next": "^19.1.0",
     "react": "16.12.0",
     "react-dom": "16.12.0",
-    "react-i18next": "^11.3.2"
+    "react-i18next": "^11.3.2",
+    "wix-ui-icons-common": "^2.0.324"
   },
   "devDependencies": {
     "@testing-library/react": "^11.2.5",
@@ -39,7 +40,8 @@
     "husky": "~4.2.1",
     "lint-staged": "^10.0.7",
     "puppeteer": "^5.5.0",
-    "typescript": "~4.1.2"
+    "typescript": "~4.1.2",
+    "wix-style-react": "^9.124.0"
   },
   "jest": {
     "preset": "@wix/yoshi-flow-fullstack"
